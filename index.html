@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShishaBar Spin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="Page">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="me-5 text-white" href="#Page">Shisha Bar Spin</a>
+                <button class="navbar-toggler" onclick="navbar()" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                    <i id="klik" class="fas fa-plus-square fa-lg" style="color:white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="#mapa">Gde se nalazimo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="#galerija">Galerija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="#radnoVreme">Radno vreme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="start text-white mt-5 mb-5">
+        <div class="container main">
+            <p>Bleja preko dana ili večernji izlazak?<br>Svrati u</p>
+            <h1 class="mb-5 mt-2">ShishaBarSpin</h1>
+            <a class="btn btn-lg" href="tel:0605337640">Iznajmi nargilu</a>
+        </div>
+        <div id="radnoVreme"></div>
+    </section>
+
+    <div class="container">
+        <section class="mb-5 radno">
+            <h2 class="mb-5 fw-bold">Kada radi spin?</h2>
+            <p>Radno vreme:</p>
+            <p>Ponedeljak - Petak: 12:00 - 20:00</p>
+            <div id="mapa"></div>
+            <p>Subota - Nedelja: 13:00 - 20:00</p>
+            <img src="images/ukras2.png">
+        </section>
+
+        <section>
+            <h2 class="mb-5 fw-bold">Gde se nalazimo?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.
+            6067318827745!2d20.689141136753737!3d43.724867573860195!2m3!1f0!2f0!3f0!
+            3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475701c8b5cbf14d%3A0xea66cff260486799!
+            2sShishabar%20Sp1n!5e0!3m2!1ssr!2srs!4v1641750219466!5m2!1ssr!2srs" allowfullscreen="" loading="lazy"
+                class="w-100" height="500"></iframe>
+            <div id="galerija"></div>
+        </section>
+
+        <section id="galerija">
+            <div class="row">
+                <div class="col-md-6 gx-5">
+                    <img src="images/1.jpg" class="w-100">
+                </div>
+                <div class="col-md-6 gx-5">
+                    <img src="images/2.jpg" class="w-100">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 gx-5">
+                    <img src="images/3.jpg" class="w-100">
+                </div>
+                <div class="col-md-6 gx-5">
+                    <img src="images/4.jpg" class="w-100" id="scroll">
+                </div>
+            </div>
+            <div class="collapse" id="dodatno">
+                <div class="row">
+                    <div class="col-md-6 gx-5">
+                        <img src="images/5.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-6 gx-5">
+                        <img src="images/6.jpg" class="w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 gx-5">
+                        <img src="images/7.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-6 gx-5">
+                        <img src="images/8.jpg" class="w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 gx-5">
+                        <img src="images/9.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-6 gx-5">
+                        <img src="images/10.jpg" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-6 gx-5 mg">
+                <img src="images/11.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 gx-5 plus">
+                <img id="click" src="images/plus.png" class="display mx-auto d-block" type="button"
+                    data-toggle="collapse" data-target="#dodatno" aria-expanded="false" aria-controls="dodatno"
+                    onclick="gallery();">
+            </div>
+        </div>
+        <div id="kontakt"></div>
+
+        <section class="kartica mb-5 mt-5 pt-5">
+            <h2 class="mb-5 fw-bold">Iznajmi nargilu</h2>
+            <div class="row mt-5 pt-5">
+                <div class="col-4">
+                    <img src="images/spin.jpg">
+                </div>
+                <div class="col-8 my-auto">
+                    <p class="ms-4">060 5337640</p><br>
+                    <p class="ms-4">Stevan Milićević</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5">
+            <h2 class="fw-bold mb-4">O nama</h2>
+            <p class="w-100">Shisha bar Spin sa najboljim nargilama i ukusima u gradu čini idealno mesto
+                bilo da li je to izlazak vikendom ili želite da svratite preko dana na piće
+                i nargilu. Dođite, čekamo vas!
+            </p>
+        </section>
+
+    </div>
+
+    <section class="footer mt-5">
+        <div class="container row py-5">
+            <div class="col-md-6">
+                <a href="https://www.instagram.com/shishabar_sp1n/" target="_blank">
+                    <i class="fa fa-instagram fa-lg"></i> @shishabar_sp1n
+                </a><br>
+                <a href="https://www.instagram.com/stevanmilicevic_/" target="_blank">
+                    <i class="fa fa-instagram fa-lg"></i> @stevanmilicevic_
+                </a><br>
+                <a href="mailto:milicevicstevan1@yahoo.com" target="_blank">
+                    <i class="fa fa-envelope fa-lg"></i> milicevicstevan1@yahoo.com
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="tel:0605337640" target="_blank">
+                    <i class="fa fa-phone fa-lg"></i> 0605337640
+                </a><br>
+                <a href="https://www.google.com/maps/place/Shishabar+Sp1n/@43.72505,20.68925,16z/data=!4m5!3m4!1s0x0:0xea66cff260486799!8m2!3d43.7249835!4d20.6891925?hl=sr"
+                    target="_blank">
+                    <i class="fa fa-map-marker-alt fa-lg"></i> Cara Dušana 45, 36000 Kraljevo
+                </a><br>
+                <a href="tel:0605337640" target="_blank">
+                    <i class="fa fa-bong fa-lg"></i> Iznajmi nargilu
+                </a>
+            </div>
+        </div>
+        <p class="mb-0 cp"><i class="fa fa-copyright"></i>Copyright by <a href="https://www.instagram.com/0kuks/"
+                target="_blank">Kuks</a>
+            & <a href="https://www.instagram.com/dzonimil/" target="_blank">Dzonimil</a></p>
+    </section>
+
+    <script src="custom.js"></script>
+    <script src="https://kit.fontawesome.com/f7bdabb6a2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
